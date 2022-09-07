@@ -6,12 +6,18 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/arturhgq
+        aria-label: GitHub
+  search:
+    location: navbar
+    type: textbox
 
 format:
   html:
-    theme: cosmo
+    theme: default
     css: styles.css
     toc: true
 

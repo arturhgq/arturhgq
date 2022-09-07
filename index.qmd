@@ -1,11 +1,12 @@
 ---
-title: "arturhgq"
+title: ""
 ---
 
-This is a Quarto website.
+## Who am I?
+Hi there! My name is Artur Quirino, I research political regimes
+and do data analysis. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## R packages
 
-```{r}
-1 + 1
-```
+* [dtools](http://dtools.arturhgq.com)
+
