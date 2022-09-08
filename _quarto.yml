@@ -4,10 +4,16 @@ project:
 website:
   title: "arturhgq"
   navbar:
-    left:
+    foreground: "#f2f2f2"
+    left: 
       - href: index.qmd
         text: About
-    right:
+      - href: http://dtools.arturhgq.com
+        text: dtools
+      - href: http://dNA.arturhgq.com
+        text: dNA
+    right: 
+      - icon: search  
       - icon: github
         href: https://github.com/arturhgq
         aria-label: GitHub
@@ -20,6 +26,8 @@ format:
     theme: default
     css: styles.css
     toc: true
+    linkcolor: "#666699"
+    monobackgroundcolor: "#f2f2f2"
 
 
 
