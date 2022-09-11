@@ -1,13 +1,9 @@
 ---
-title: ""
+title: "Under Construction"
 ---
 
-## Who am I?
+## About me
+
 Hi there! My name is Artur Quirino, I research political regimes
 and do data analysis. 
-
-## R packages
-
-* [dtools](http://dtools.arturhgq.com)
-* [dNA](http://dNA.arturhgq.com)
 
