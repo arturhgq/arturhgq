@@ -4,7 +4,7 @@ project:
 website:
   title: "arturhgq"
   sidebar:
-  collapse-level: 1
+    collapse-level: 1
     tools: 
       - icon: github 
     style: "floating"
