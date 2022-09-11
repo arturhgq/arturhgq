@@ -34,5 +34,6 @@ format:
     linkcolor: "#666699"
     monobackgroundcolor: "#f2f2f2"
 
-
+execute:
+  freeze: auto
 
