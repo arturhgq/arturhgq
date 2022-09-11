@@ -18,11 +18,14 @@ website:
         contents: 
           - text: "dtools"
             file: http://dtools.arturhgq.com/
-          - text: "dNA"
+          - text: "dna"
             file: http://dna.arturhgq.com/
           - text: "cpf"
             file: http://cpf.arturhgq.com/
+          - text: "ead"
+          - file: http://ead.arturhgq.com/
     page-footer: "Copyright 2022, Artur Quirino" 
+    
 format:
   html:
     theme: default
