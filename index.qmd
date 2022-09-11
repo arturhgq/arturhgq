@@ -1,9 +1,11 @@
 ---
-title: "Under Construction"
+title: "Under construction"
 ---
+::: {.callout-note icon=false}
 
 ## About me
 
 Hi there! My name is Artur Quirino, I research regime change
 and do data analysis. 
 
+:::
