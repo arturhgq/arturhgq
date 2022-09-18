@@ -23,16 +23,17 @@ website:
             file: http://dna.arturhgq.com/
           - text: "cpf"
             file: http://cpf.arturhgq.com/
+          - text: "cnpj"
+            file: http://cnpj.arturhgq.com/
           - text: "ead"
           - file: http://ead.arturhgq.com/
-      - section: "blog"
+      - section: "Blog"
     page-footer: "Copyright 2022, Artur Quirino" 
     
 format:
   html:
     theme:
       light: flatly
-      dark: darkly
     css: styles.css
     toc: true
     linkcolor: "#666699"
