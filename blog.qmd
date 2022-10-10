@@ -1,0 +1,10 @@
+---
+title: "Posts"
+listing:
+  contents: posts
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+
