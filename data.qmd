@@ -1,0 +1,10 @@
+---
+title: "data"
+listing:
+  contents: data
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+
