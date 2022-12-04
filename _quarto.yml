@@ -17,6 +17,8 @@ website:
           - index.qmd
       - section: "Sofware"
         contents: 
+          - text: "ead"
+            file: http://ead.arturhgq.com/
           - text: "dtools"
             file: http://dtools.arturhgq.com/
           - text: "dna"
@@ -29,8 +31,6 @@ website:
             file: http://cpf.arturhgq.com/
           - text: "cnpj"
             file: http://cnpj.arturhgq.com/
-          - text: "ead"
-          - file: http://ead.arturhgq.com/
       - section: "Blog"
         contents:
           - file:  blog.qmd
