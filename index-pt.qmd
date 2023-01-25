@@ -13,10 +13,10 @@ about:
 
 Hey there! I am Artur Quirino, I do research and data analysis. I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. I am currently researching democratic backsliding. I often create functions in `R` for data analysis as well. When I write several functions on the same topic, I make an effort to put them together in a `R` package, but this is not always the case. In my spare time, I like to exercise.
 
-## Education
+## Educação
 
-Federal University of Minas Gerais| Belo Horizonte, Brazil  
-Masters in Political Science | present
+Universidade Federal de Minas Gerais| Belo Horizonte, Brasil  
+Mestre em Ciência Política | 2022
 
-Federal University of Minas Gerais| Belo Horizonte, Brazil  
-B.A in Social Science | 2014 - 2018
+niversidade Federal de Minas Gerais| Belo Horizonte, Brasil 
+Bacharel em Ciências Sociais | 2018
