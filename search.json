@@ -1,24 +1,10 @@
 [
   {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Datasets list",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "posts/2022-10-09-Abstencao2turno.html",
-    "href": "posts/2022-10-09-Abstencao2turno.html",
-    "title": "Quem não irá votar no segundo turno de 2022?",
-    "section": "",
-    "text": "Em construção"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "About me",
     "section": "",
-    "text": "Hey! I’m Artur Quirino, I do research and data analysis. I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. I am currently researching democratic backsliding. I often create functions in R for data analysis as well. When I write several functions on the same topic, I make an effort to put them together in a R package, but this is not always the case. In my spare time, I like to exercise."
+    "text": "Hey there! I am Artur Quirino, I do research and data analysis. I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. I am currently researching democratic backsliding. I often create functions in R for data analysis as well. When I write several functions on the same topic, I make an effort to put them together in a R package, but this is not always the case. In my spare time, I like to exercise."
   },
   {
     "objectID": "index.html#education",
@@ -32,6 +18,34 @@
     "href": "blog.html",
     "title": "Posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nQuem não irá votar no segundo turno de 2022?\n\n\nArtur Quirino\n\n\n\n\n\n\nNo matching items"
+    "text": "Ordenar por\n       Pré-selecionado\n         \n          Título\n        \n         \n          Autor\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTítulo\n\n\nAutor\n\n\n\n\n\n\nQuem não irá votar no segundo turno de 2022?\n\n\nArtur Quirino\n\n\n\n\n\n\nNenhum item correspondente"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Datasets list",
+    "section": "",
+    "text": "Nenhum item correspondente"
+  },
+  {
+    "objectID": "posts/2022-10-09-Abstencao2turno.html",
+    "href": "posts/2022-10-09-Abstencao2turno.html",
+    "title": "Quem não irá votar no segundo turno de 2022?",
+    "section": "",
+    "text": "Em construção"
+  },
+  {
+    "objectID": "index-pt.html",
+    "href": "index-pt.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hey there! I am Artur Quirino, I do research and data analysis. I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. I am currently researching democratic backsliding. I often create functions in R for data analysis as well. When I write several functions on the same topic, I make an effort to put them together in a R package, but this is not always the case. In my spare time, I like to exercise."
+  },
+  {
+    "objectID": "index-pt.html#educação",
+    "href": "index-pt.html#educação",
+    "title": "About me",
+    "section": "Educação",
+    "text": "Educação\nUniversidade Federal de Minas Gerais| Belo Horizonte, Brasil\nMestre em Ciência Política | 2022\nniversidade Federal de Minas Gerais| Belo Horizonte, Brasil Bacharel em Ciências Sociais | 2018"
   }
 ]

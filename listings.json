@@ -1,12 +1,12 @@
 [
   {
-    "listing": "/data.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/2022-10-09-Abstencao2turno.html"
     ]
+  },
+  {
+    "listing": "/data.html",
+    "items": []
   }
 ]

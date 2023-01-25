@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/data.html</loc>
-    <lastmod>2022-12-04T23:20:22.296Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/2022-10-09-Abstencao2turno.html</loc>
-    <lastmod>2022-12-04T23:20:23.364Z</lastmod>
-  </url>
-  <url>
     <loc>https://github.com/arturhgq/arturhgq/index.html</loc>
-    <lastmod>2022-12-04T23:20:24.088Z</lastmod>
+    <lastmod>2023-01-25T20:43:20.037Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/arturhgq/arturhgq/blog.html</loc>
-    <lastmod>2022-12-04T23:20:24.848Z</lastmod>
+    <lastmod>2023-01-25T20:43:21.117Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/arturhgq/arturhgq/data.html</loc>
+    <lastmod>2023-01-25T20:43:22.021Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/arturhgq/arturhgq/posts/2022-10-09-Abstencao2turno.html</loc>
+    <lastmod>2023-01-25T20:43:22.733Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/arturhgq/arturhgq/index-pt.html</loc>
+    <lastmod>2023-01-25T20:43:23.437Z</lastmod>
   </url>
 </urlset>
