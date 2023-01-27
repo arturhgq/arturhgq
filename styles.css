@@ -1,2 +1,7 @@
 /* css styles */
 
+#quarto-margin-sidebar {
+  margin-right: -600px;
+  margin-left: 0px;
+  padding-left: 0px;
+}

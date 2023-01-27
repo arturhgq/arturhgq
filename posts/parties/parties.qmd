@@ -1,0 +1,10 @@
+---
+title: "Political Parties"
+listing:
+  contents: ./
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+

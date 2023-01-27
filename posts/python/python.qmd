@@ -1,0 +1,10 @@
+---
+title: "Python"
+listing:
+  contents: ./
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+

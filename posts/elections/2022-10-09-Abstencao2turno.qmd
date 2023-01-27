@@ -1,0 +1,10 @@
+---
+title: "Quem não vota nas eleições brasileiras?"
+author: "Artur Quirino"
+---
+
+```{r}
+plot(pressure)
+```
+
+

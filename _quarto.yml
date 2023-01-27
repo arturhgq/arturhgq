@@ -1,11 +1,87 @@
 project:
-  title: Artur Quirino
+  title: arturhgq
   type: website
 
+website:
+  search:
+    location: navbar
+    type: overlay
+  sidebar:
+    header: "Blog"
+    collapse-level: 2
+    style: "floating"
+    border: true
+    foreground: "#333333"
+    contents: 
+      - section: "Data Analysis"
+        contents:
+          - file: posts/R/R.qmd
+          - file: posts/python/python.qmd
+          - file: posts/stats/stats.qmd
+      - section: "Politics"
+        contents:
+          - file: posts/elections/elections.qmd
+          - file: posts/parties/parties.qmd
+          - file: posts/regimes/regimes.qmd
+          - file: posts/accountability/accountability.qmd
+      - section: "Methodology"
+      #  contents:
+      #    - file: 
+      - section: "Research"
+      #  contents:
+      #    - file: 
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home 
+      - text: "Software"
+        menu:
+          - text: "ead"
+            href: http://ead.arturhgq.com/
+          - text: "dtools"
+            href: http://dtools.arturhgq.com/
+          - text: "dna"
+            href: http://dna.arturhgq.com/
+          - text: "ggviz"
+            href: http://ggviz.arturhgq.com/
+          - text: "read365"
+            href: http://read365.arturhgq.com/
+          - text: "cpf"
+            href: http://cpf.arturhgq.com/
+          - text: "cnpj"
+            href: http://cnpj.arturhgq.com/
+      - text: "Research"
+        href: "Research"
+      - text: "Teaching"
+        href: "Teaching"
+      - text: "Publications"
+        href: "Publications"
+      - text: "Data"
+        href: data.qmd
+    right:
+      - icon: twitter
+        href: https://twitter.com/arturhgq
+      - icon: github
+        menu: 
+          - text: Source Code
+            url: https://github.com/arturhgq/arturhgq
+          - text: Repositories
+            url: https://github.com/arturhgq?tab=repositories
+    page-footer: "Copyright 2022, Artur Quirino" 
+
+lang: en
+format:
+  html:
+    theme:
+      light: flatly
+    css: styles.css
+    toc: true
+    linkcolor: "#666699"
+    monobackgroundcolor: "#f2f2f2"
+
 execute:
-  freeze: true
-  
-profile:
-  default: [en]
-  group: [en, pt]
-  
+  freeze: auto
+
+comments:
+  giscus:
+    repo: arturhgq/arturhgq

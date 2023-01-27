@@ -1,0 +1,10 @@
+---
+title: "Elections"
+listing:
+  contents: ./
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+

@@ -1,0 +1,10 @@
+---
+title: "Regimes"
+listing:
+  contents: ./
+  type: table
+  sort:
+    - "date"
+    - "title desc"
+---
+
