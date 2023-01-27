@@ -1,0 +1,16 @@
+{
+  "hash": "3dadc71a227efd9b82b36d5d17171b40",
+  "result": {
+    "markdown": "---\ntitle: \"Quem não vota nas eleições brasileiras?\"\nauthor: \"Artur Quirino\"\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(pressure)\n```\n\n::: {.cell-output-display}\n![](2022-10-09-Abstencao2turno_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "2022-10-09-Abstencao2turno_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
