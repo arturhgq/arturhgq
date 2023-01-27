@@ -1,12 +1,36 @@
 [
   {
-    "listing": "/blog.html",
+    "listing": "/data.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/R/R.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/accountability/accountability.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/python/python.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/elections/elections.html",
     "items": [
-      "/posts/2022-10-09-Abstencao2turno.html"
+      "/posts/elections/2022-10-09-Abstencao2turno.html"
     ]
   },
   {
-    "listing": "/data.html",
+    "listing": "/posts/parties/parties.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/stats/stats.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/regimes/regimes.html",
     "items": []
   }
 ]
