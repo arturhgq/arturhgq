@@ -25,8 +25,6 @@ B.A in Social Science | 2018
 
 ## Português
 
-### Educação
-
 Oi! Me chamo Artur Quirino; Sou pesquisador e Cientista de Dados. 
 
 Na academia, me interesso por um conjunto interconectado de tópicos, especialmente partidos políticos, eleiçoes, **accountability**, mudanças de regime, metodologia e programação. Atualmente, eu estou pesquisando **accountability** e aprendendo estatística bayesiana e **machine learning**. Recentemente, eu estive pesquisando retrocesso democrático em minha dissertação de mestrado.   
@@ -34,6 +32,8 @@ Na academia, me interesso por um conjunto interconectado de tópicos, especialme
 Em relação a análise de dados, gosto de automatizar processos e costumo criar funções em `R`. E quando eu escrevo um monte delas sobre o mesmo tópico, eu me esforço para colocá-las em  um pacote estatístico, mas não é sempre o caso. Um de meus desafios para 2023 é também criar pacotes estatísticos usando `Python`.  
 
 No meu tempo livre, gosto de me exercitar, diariamente. Às vezes, jogo video games e jogos de tabuleiro com minha família, às vezes, monto quebra-cabeças. 
+
+### Educação
 
 Universidade Federal de Minas Gerais| Belo Horizonte, Brasil  
 Mestre em Ciência Política | 2022
