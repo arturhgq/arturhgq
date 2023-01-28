@@ -7,11 +7,13 @@ about:
 
 ## English
 
-Hey there! I am Artur Quirino; I do research and data analysis. Academically, I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. Currently, I am now researching accountability and learning Bayesian statistics and machine learning. Before, I've been researching democratic backsliding in my master’s thesis.  
+Hey there! I am Artur Quirino; I do research and data analysis. 
 
-Regarding data analysis, I often create functions in `R`. When I write several functions on the same topic, I make an effort to put them together in a `R` package, but this is not always the case. One of my 2023 challenges is to do the same thing using `Python`.  
+In academia, I am interested in an interconnected set of topics, especially political parties, elections, accountability, regime change, methodology and programming. Currently, I am now researching accountability and learning Bayesian statistics as also machine learning. Before, I've been researching democratic backsliding in my masters thesis.  
 
-In my spare time, I like to exercise. Sometimes I play games with my family, sometimes I do Jigsaw Puzzles.  
+Regarding data analysis, I like to automate processes and usually create functions in `R`. When I write several functions on the same topic, I make an effort to put them together in a `R` package, but this is not always the case. One of my 2023 challenges is to do the same thing using `Python`.  
+
+In my spare time, I like to exercise daily. Sometimes I play games with my family, sometimes I do Jigsaw Puzzles as well.  
 
 ### Education
 
@@ -19,11 +21,17 @@ Federal University of Minas Gerais| Belo Horizonte, Brazil
 Masters in Political Science | 2022
 
 Federal University of Minas Gerais| Belo Horizonte, Brazil  
-B.A in Social Science | 2014 - 2018
+B.A in Social Science | 2018
 
 ## Português
 
 ### Educação
+
+Oi! Me chamo Artur Quirino; Sou pesquisador e Cientista de Dados. Na academia, me interesso por um conjunto interconectado de tópicos, especialmente partidos políticos, eleiçoes, **accountability**, mudanças de regime, metodologia e programação. Atualmente, eu estou pesquisando **accountability** e aprendendo estatística bayesiana e **machine learning**. Recentemente, eu estive pesquisando retrocesso democrático em minha dissertação de mestrado.   
+
+Em relação a análise de dados, gosto de automatizar processos e costumo criar funções em `R`. E quando eu escrevo um monte delas sobre o mesmo tópico, eu me esforço para colocá-las em  um pacote estatístico, mas não é sempre o caso. Um de meus desafios para 2023 é também criar pacotes estatísticos usando `Python`.  
+
+No meu tempo livre, gosto de me exercitar, diariamente. Às vezes, jogo video games e jogos de tabuleiro com minha família, às vezes, monto quebra-cabeças. 
 
 Universidade Federal de Minas Gerais| Belo Horizonte, Brasil  
 Mestre em Ciência Política | 2022

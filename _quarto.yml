@@ -15,6 +15,7 @@ website:
     contents: 
       - section: "Data Analysis"
         contents:
+          - file: posts/programming/programming.qmd
           - file: posts/R/R.qmd
           - file: posts/python/python.qmd
           - file: posts/stats/stats.qmd
@@ -24,7 +25,7 @@ website:
           - file: posts/parties/parties.qmd
           - file: posts/regimes/regimes.qmd
           - file: posts/accountability/accountability.qmd
-      - section: "Methodology"
+      - section: "Sci Methodology"
       #  contents:
       #    - file: 
       - section: "Research"
