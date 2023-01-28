@@ -8,6 +8,10 @@
     "items": []
   },
   {
+    "listing": "/posts/benchmarking/benchmarking.html",
+    "items": []
+  },
+  {
     "listing": "/posts/accountability/accountability.html",
     "items": []
   },
@@ -16,10 +20,12 @@
     "items": []
   },
   {
+    "listing": "/posts/programming/programming.html",
+    "items": []
+  },
+  {
     "listing": "/posts/elections/elections.html",
-    "items": [
-      "/posts/elections/2022-10-09-Abstencao2turno.html"
-    ]
+    "items": []
   },
   {
     "listing": "/posts/parties/parties.html",

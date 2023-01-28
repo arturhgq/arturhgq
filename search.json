@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Under construction",
     "section": "",
-    "text": "EnglishPortuguês\n\n\nHey there! I am Artur Quirino; I do research and data analysis. Academically, I am interested in several topics, especially political parties, elections, accountability, regime change, methodology and programming. Currently, I am now researching accountability and learning Bayesian statistics and machine learning. Before, I’ve been researching democratic backsliding in my master’s thesis.\nRegarding data analysis, I often create functions in R. When I write several functions on the same topic, I make an effort to put them together in a R package, but this is not always the case. One of my 2023 challenges is to do the same thing using Python.\nIn my spare time, I like to exercise. Sometimes I play games with my family, sometimes I do Jigsaw Puzzles.\n\nEducation\nFederal University of Minas Gerais| Belo Horizonte, Brazil\nMasters in Political Science | 2022\nFederal University of Minas Gerais| Belo Horizonte, Brazil\nB.A in Social Science | 2014 - 2018\n\n\n\n\nEducação\nUniversidade Federal de Minas Gerais| Belo Horizonte, Brasil\nMestre em Ciência Política | 2022\nUniversidade Federal de Minas Gerais| Belo Horizonte, Brasil\nBacharel em Ciências Sociais | 2018"
+    "text": "EnglishPortuguês\n\n\nHey there! I am Artur Quirino; I do research and data analysis.\nIn academia, I am interested in an interconnected set of topics, especially political parties, elections, accountability, regime change, methodology and programming. Currently, I am now researching accountability and learning Bayesian statistics as also machine learning. Before, I’ve been researching democratic backsliding in my masters thesis.\nRegarding data analysis, I like to automate processes and usually create functions in R. When I write several functions on the same topic, I make an effort to put them together in a R package, but this is not always the case. One of my 2023 challenges is to do the same thing using Python.\nIn my spare time, I like to exercise daily. Sometimes I play games with my family, sometimes I do Jigsaw Puzzles as well.\n\nEducation\nFederal University of Minas Gerais| Belo Horizonte, Brazil\nMasters in Political Science | 2022\nFederal University of Minas Gerais| Belo Horizonte, Brazil\nB.A in Social Science | 2018\n\n\n\n\nEducação\nOi! Me chamo Artur Quirino; Sou pesquisador e Cientista de Dados. Na academia, me interesso por um conjunto interconectado de tópicos, especialmente partidos políticos, eleiçoes, accountability, mudanças de regime, metodologia e programação. Atualmente, eu estou pesquisando accountability e aprendendo estatística bayesiana e machine learning. Recentemente, eu estive pesquisando retrocesso democrático em minha dissertação de mestrado.\nEm relação a análise de dados, gosto de automatizar processos e costumo criar funções em R. E quando eu escrevo um monte delas sobre o mesmo tópico, eu me esforço para colocá-las em um pacote estatístico, mas não é sempre o caso. Um de meus desafios para 2023 é também criar pacotes estatísticos usando Python.\nNo meu tempo livre, gosto de me exercitar, diariamente. Às vezes, jogo video games e jogos de tabuleiro com minha família, às vezes, monto quebra-cabeças.\nUniversidade Federal de Minas Gerais| Belo Horizonte, Brasil\nMestre em Ciência Política | 2022\nUniversidade Federal de Minas Gerais| Belo Horizonte, Brasil\nBacharel em Ciências Sociais | 2018"
   },
   {
     "objectID": "data.html",
@@ -17,6 +17,13 @@
     "objectID": "posts/R/R.html",
     "href": "posts/R/R.html",
     "title": "R",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "posts/benchmarking/benchmarking.html",
+    "href": "posts/benchmarking/benchmarking.html",
+    "title": "Tools for data analysis: benchmarking",
     "section": "",
     "text": "No matching items"
   },
@@ -35,18 +42,18 @@
     "text": "No matching items"
   },
   {
-    "objectID": "posts/elections/2022-10-09-Abstencao2turno.html",
-    "href": "posts/elections/2022-10-09-Abstencao2turno.html",
-    "title": "Quem não vota nas eleições brasileiras?",
+    "objectID": "posts/programming/programming.html",
+    "href": "posts/programming/programming.html",
+    "title": "Programming",
     "section": "",
-    "text": "plot(pressure)"
+    "text": "No matching items"
   },
   {
     "objectID": "posts/elections/elections.html",
     "href": "posts/elections/elections.html",
     "title": "Elections",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nQuem não vota nas eleições brasileiras?\n\n\nArtur Quirino\n\n\n\n\n\n\nNo matching items"
+    "text": "No matching items"
   },
   {
     "objectID": "posts/parties/parties.html",
