@@ -26,10 +26,10 @@ website:
           - file: posts/parties/parties.qmd
           - file: posts/regimes/regimes.qmd
           - file: posts/accountability/accountability.qmd
-      - section: "Sci Methodology"
+      - section: "Political Methodology"
       #  contents:
       #    - file: 
-      - section: "Research"
+      - section: "Academic Research"
       #  contents:
       #    - file: 
   navbar:
