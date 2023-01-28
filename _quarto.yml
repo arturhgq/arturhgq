@@ -1,6 +1,7 @@
 project:
   title: arturhgq
   type: website
+  output-dir: docs
 
 website:
   search:
