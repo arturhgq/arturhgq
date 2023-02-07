@@ -100,7 +100,7 @@ carregá-las. Feito dessa forma, você poupará tempo e memória RAM.
 
 ## Tratamento dos dados
 
-Nesta seção, eu aplico as sugestões que propus no tópico anterior, operacionalizando 
+Nesta seção, eu aplico as sugestões que propus no tópico anterior e faço 
 até três operações em cada uma das tabelas: *subset*, agrupamento e soma. Para reduzir
 o consumo de tempo das operações, optei pelo pacote `data.table` ao em vez do amigável `dplyr`.
 
@@ -210,8 +210,7 @@ votacao_mun2022 = data.table::setDT(data)[
 ### Limpeza do ambiente global e memória
 
 Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. 
-Sendo que, a exclusão da última base orignal carregada na memória junto ao *reset* da sessão do R
-gerou uma nova redução de consumo de memória de 932 mb. 
+Para reduzir ainda mais o consumo de memória, basta excluir do ambiente global a última tabela carregada e resetar a sessão do R. O processo gerou uma nova redução de consumo de memória de 932 mb. 
 
 ```{r}
 rm(data) # exclui a base original
