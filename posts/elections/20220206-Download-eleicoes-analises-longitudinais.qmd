@@ -40,6 +40,7 @@ make_urls = function(x) {
 
 ## Cria os links
 year = seq(1994, 2022, by = 4)
+
 urls = make_urls(year)
 urls
 ```
