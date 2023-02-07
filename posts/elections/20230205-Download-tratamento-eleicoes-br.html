@@ -439,7 +439,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="tratamento-dos-dados" class="level2">
 <h2 class="anchored" data-anchor-id="tratamento-dos-dados">Tratamento dos dados</h2>
-<p>Nesta seção, eu aplico as sugestões que propus no tópico anterior, operacionalizando até três operações em cada uma das tabelas: <em>subset</em>, agrupamento e soma. Para reduzir o consumo de tempo das operações, optei pelo pacote <code>data.table</code> ao em vez do amigável <code>dplyr</code>.</p>
+<p>Nesta seção, eu aplico as sugestões que propus no tópico anterior e faço até três operações em cada uma das tabelas: <em>subset</em>, agrupamento e soma. Para reduzir o consumo de tempo das operações, optei pelo pacote <code>data.table</code> ao em vez do amigável <code>dplyr</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Lista de parâmetros usados nas operações</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>params <span class="ot">=</span> <span class="fu">list</span>(</span>
@@ -543,7 +543,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="limpeza-do-ambiente-global-e-memória" class="level3">
 <h3 class="anchored" data-anchor-id="limpeza-do-ambiente-global-e-memória">Limpeza do ambiente global e memória</h3>
-<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Sendo que, a exclusão da última base orignal carregada na memória junto ao <em>reset</em> da sessão do R gerou uma nova redução de consumo de memória de 932 mb.</p>
+<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Para reduzir ainda mais o consumo de memória, basta excluir do ambiente global a última tabela carregada e resetar a sessão do R. O processo gerou uma nova redução de consumo de memória de 932 mb.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(data) <span class="co"># exclui a base original</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.rs.restartR</span>() <span class="co"># reinicia a sessão do R, mas mantém os objetos salvos no "Global Environment"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

@@ -363,8 +363,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>O <a href="https://www.tse.jus.br/">Tribunal Superior Eleitoral</a> (TSE) disponibiliza para download um vasto conjunto de microdados eleitorais em seu <a href="https://dadosabertos.tse.jus.br/">Portal de Dados Abertos</a>. Nesta breve postagem, eu disponibilizo uma função exemplo para gerar as <em>urls</em> que armazenam as tabelas do portal para mais de um ano eleitoral.</p>
-<p>Note que a função monta as <em>urls</em> para tabelas de eleitorado, de detalhes da votação por seção eleitoral e de votação nominal por município e zona. Para montar outras <em>urls</em>, como as dos boletins de urna, <code>make_urls</code> terá que ser ajustada para lidar com o padrão das <em>urls</em> dos boletins, que é distinto. Outras <em>urls</em>, como as de votação nominal por seção eleitoral, seguem o mesmo padrão e podem ser podem substituir ou incorporadas ao código abaixo.</p>
+<p>O <a href="https://www.tse.jus.br/">Tribunal Superior Eleitoral</a> (TSE) disponibiliza para download um vasto conjunto de microdados eleitorais em seu <a href="https://dadosabertos.tse.jus.br/">Portal de Dados Abertos</a>. Nesta breve postagem, eu crio uma função exemplo para gerar as <em>urls</em> que armazenam as tabelas contidas no portal. A função é útil em análises longitudinais.</p>
+<p>Note que a função monta as <em>urls</em> para tabelas de eleitorado, de detalhes da votação por seção eleitoral e de votação nominal por município e zona. Para montar outras <em>urls</em>, como as dos boletins de urna, <code>make_urls</code> terá que ser ajustada para lidar com o padrão das <em>urls</em> dos boletins, que é distinto. Outras <em>urls</em>, como as de votação nominal por seção eleitoral, seguem o mesmo padrão e podem ser substituidas ou incorporadas ao código abaixo.</p>
 <section id="monta-as-urls" class="level2">
 <h2 class="anchored" data-anchor-id="monta-as-urls">Monta as <em>urls</em></h2>
 <div class="cell">
