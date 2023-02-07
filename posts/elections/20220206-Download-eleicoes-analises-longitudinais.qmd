@@ -20,6 +20,7 @@ nominal por seção eleitoral, seguem o mesmo padrão e podem ser substituidas
 ou incorporadas ao código abaixo. 
 
 ## Monta as *urls*
+
 ```{r eval= TRUE}
 
 ## Função para gerar os links
@@ -46,6 +47,7 @@ urls
 ## Download das tabelas
 
 ```{r}
+remotes::install_github("arturhgq/dtools")
 files = dtools::download.files(urls)
 ```
 

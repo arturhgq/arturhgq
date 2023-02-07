@@ -84,7 +84,7 @@ tabelas em `.csv` e um documento em `.pdf`. Portanto, caso fosse atribuido a
 que contém os dados de votacao nominal, a nível de município e zona eleitoral,
 dos 26 estados, do Distrito Federal e dos eleitores que votaram no exterior.
 
-### Abordagem de leitura para redução de gasto de memória RAM
+### Abordagem de leitura de dados para redução de gasto de memória RAM
 
 Certamente, se você não usa um supercomputador, carregar milhares de linhas de
 dados na memória do seu computador será sempre um desafio. No exemplo acima, eu
@@ -92,7 +92,7 @@ consumi 9,14 GB de memória RAM para carregar 16.818.896 linhas de dados
 distribuídas em 95 colunas. 
 
 Uma opção para tornar viável a leitura de grandes volumes de dados sem estourar a memória 
-RAM de sua máquina é carregar uma tabela de cada vez, tratar os dados dessa tabela 
+RAM de sua máquina é carregar uma tabela de cada vez, tratar os dados da tabela carregada 
 e somente então ler o próximo arquivo, reescrevendo o anterior. 
 Em casos extremos, você pode particionar as tabelas ou selecionar colunas antes de 
 carregá-las. Feito dessa forma, você poupará tempo e memória RAM. 
