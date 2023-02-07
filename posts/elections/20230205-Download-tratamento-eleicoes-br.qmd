@@ -2,7 +2,7 @@
 title: "Download e tratamento de dados das eleições brasileiras usando R"
 author: "Artur Quirino"
 date: "2023-02-06"
-date-modified: "2023-02-06"
+date-modified: "2023-02-07"
 execute: 
   eval: FALSE
 ---
@@ -64,10 +64,9 @@ remotes::install_github("silvadenisson/electionsBR")
 
 year = 2022
 
-# Não rode o código se o computador tiver até 8gb de RAM.
 voter_profile = electionsBR::voter_profile(year)
-details_mun_zone_fed = electionsBR::details_mun_zone_fed(year)
-vote_mun_zone_fed = electionsBR::vote_mun_zone_fed(year)
+details_mun_zone_fed = electionsBR::details_mun_zone_fed(year, br_archive = TRUE)
+vote_mun_zone_fed = electionsBR::vote_mun_zone_fed(year, br_archive = TRUE)
 ```
 
 :::
@@ -76,7 +75,7 @@ Em detalhes, `mapply` aplica à função `read_delim_zip` dois parâmetros: `x` 
 Em x, atribui-se o caminho absoluto dos três arquivos de interesse - "eleitorado2022", 
 "votacao_detalhes_secao2022" e "votacao_nominal_zona2022." Em `pattern`, define-se, via `regex`,
 o padrão de arquivos que deverá ser descompactado e lido para cada `x`. Quanto mais 
-preciso for o padrão definido, menores serão os gastos com tempo e com memória RAM. 
+detalhado for o padrão definido, menores serão os gastos com tempo e com memória RAM. 
 
 Vejamos, por exemplo, o arquivo "votacao_nominal_zona2022". Internamente, ele contém 29 
 tabelas em `.csv` e um documento em `.pdf`. Portanto, caso fosse atribuido a
@@ -210,7 +209,7 @@ votacao_mun2022 = data.table::setDT(data)[
 ### Limpeza do ambiente global e memória
 
 Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. 
-Para reduzir ainda mais o consumo de memória, basta excluir do ambiente global a última tabela carregada e resetar a sessão do R. O processo gerou uma nova redução de consumo de memória de 932 mb. 
+Para reduzir ainda mais o consumo de memória, basta excluir a última tabela carregada no ambiente global e resetar a sessão do R. Este processo gerou uma nova redução no consumo de memória de 932 mb. 
 
 ```{r}
 rm(data) # exclui a base original

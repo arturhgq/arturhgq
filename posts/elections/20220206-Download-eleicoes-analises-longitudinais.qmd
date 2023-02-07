@@ -1,7 +1,7 @@
 ---
 title: "Download de dados eleitorais para análises longitudinais usando R"
 date: "2023-02-05"
-date-modified: "2023-02-06"
+date-modified: "2023-02-07"
 author: "Artur Quirino"
 execute: 
   eval: FALSE
