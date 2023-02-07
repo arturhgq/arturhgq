@@ -25,7 +25,10 @@
   },
   {
     "listing": "/posts/elections/elections.html",
-    "items": []
+    "items": [
+      "/posts/elections/20220206-Download-eleicoes-analises-longitudinais.html",
+      "/posts/elections/20230205-Download-tratamento-eleicoes-br.html"
+    ]
   },
   {
     "listing": "/posts/parties/parties.html",
