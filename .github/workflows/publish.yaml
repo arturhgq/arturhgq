@@ -6,16 +6,17 @@ name: Render and Publish
 
 jobs:
   build-deploy:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
         
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        #with:
+        with:
           # To install LaTeX to build PDF book 
-          # tinytex: true 
+          tinytex: true 
+          
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
@@ -23,10 +24,12 @@ jobs:
             any::rmarkdown
             any::downlit
             any::xml2
+            
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x' 
       - run: pip install jupyter
+      
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
