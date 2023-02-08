@@ -18,9 +18,7 @@ jobs:
           tinytex: true 
           
       - name: "teste" #uses: r-lib/actions/setup-r-dependencies@v2
-        run: |
-            install.packages("jsonlite")
-    
+        run: Rscript -e install.packages("jsonlite")
     ##    with:
     #      packages:
     #        any::knitr
