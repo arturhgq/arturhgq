@@ -17,8 +17,8 @@ jobs:
           # To install LaTeX to build PDF book 
           tinytex: true 
           
-      - name: "teste" #uses: r-lib/actions/setup-r-dependencies@v2
-        run: Rscript -e install.packages("jsonlite")
+      - name: "setup-r-dependencies" #uses: r-lib/actions/setup-r-dependencies@v2
+        run: Rscript -e 'install.packages("jsonlite")' 
     ##    with:
     #      packages:
     #        any::knitr
