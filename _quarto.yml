@@ -82,7 +82,7 @@ format:
     monobackgroundcolor: "#f2f2f2"
 
 execute:
-  freeze: auto
+  freeze: true
 
 comments:
   giscus:
