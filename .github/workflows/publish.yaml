@@ -21,8 +21,10 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
-            any::pak
-            any::jsonlite
+            any::knitr
+            any::rmarkdown
+            any::downlit
+            any::xml2
       - uses: actions/setup-python@v4
         with:
           python-version: '3.x' 
