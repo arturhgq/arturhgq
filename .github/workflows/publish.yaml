@@ -20,6 +20,7 @@ jobs:
       # add software dependencies here
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
+          r-version: '4.2.0' 
           packages:
             any::knitr
             any::rmarkdown
