@@ -17,10 +17,11 @@ jobs:
           # To install LaTeX to build PDF book 
           tinytex: true 
           
-      - uses: r-lib/actions/setup-r-dependencies@v2
+      - name: "teste" #uses: r-lib/actions/setup-r-dependencies@v2
         run: |
-          install.packages("jsonlite")
-    #    with:
+            install.packages("jsonlite")
+    
+    ##    with:
     #      packages:
     #        any::knitr
     #        any::rmarkdown
