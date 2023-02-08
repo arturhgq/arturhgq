@@ -18,12 +18,14 @@ jobs:
           tinytex: true 
           
       - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages:
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
+        run: |
+          install.packages("jsonlite")
+    #    with:
+    #      packages:
+    #        any::knitr
+    #        any::rmarkdown
+    #        any::downlit
+    #        any::xml2
             
       - uses: actions/setup-python@v4
         with:
