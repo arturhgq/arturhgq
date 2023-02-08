@@ -325,7 +325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download">Download</a></li>
   <li><a href="#leitura" id="toc-leitura" class="nav-link" data-scroll-target="#leitura">Leitura</a>
   <ul class="collapse">
-  <li><a href="#abordagem-de-leitura-para-redução-de-gasto-de-memória-ram" id="toc-abordagem-de-leitura-para-redução-de-gasto-de-memória-ram" class="nav-link" data-scroll-target="#abordagem-de-leitura-para-redução-de-gasto-de-memória-ram">Abordagem de leitura para redução de gasto de memória RAM</a></li>
+  <li><a href="#abordagem-de-leitura-de-dados-para-redução-de-gasto-de-memória-ram" id="toc-abordagem-de-leitura-de-dados-para-redução-de-gasto-de-memória-ram" class="nav-link" data-scroll-target="#abordagem-de-leitura-de-dados-para-redução-de-gasto-de-memória-ram">Abordagem de leitura de dados para redução de gasto de memória RAM</a></li>
   </ul></li>
   <li><a href="#tratamento-dos-dados" id="toc-tratamento-dos-dados" class="nav-link" data-scroll-target="#tratamento-dos-dados">Tratamento dos dados</a>
   <ul class="collapse">
@@ -368,7 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 6, 2023</p>
+      <p class="date-modified">February 7, 2023</p>
     </div>
   </div>
     
@@ -421,20 +421,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>year <span class="ot">=</span> <span class="dv">2022</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Não rode o código se o computador tiver até 8gb de RAM.</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>voter_profile <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">voter_profile</span>(year)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>details_mun_zone_fed <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">details_mun_zone_fed</span>(year)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>vote_mun_zone_fed <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">vote_mun_zone_fed</span>(year)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>voter_profile <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">voter_profile</span>(year)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>details_mun_zone_fed <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">details_mun_zone_fed</span>(year, <span class="at">br_archive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>vote_mun_zone_fed <span class="ot">=</span> electionsBR<span class="sc">::</span><span class="fu">vote_mun_zone_fed</span>(year, <span class="at">br_archive =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-<p>Em detalhes, <code>mapply</code> aplica à função <code>read_delim_zip</code> dois parâmetros: <code>x</code> e <code>pattern</code>. Em x, atribui-se o caminho absoluto dos três arquivos de interesse - “eleitorado2022”, “votacao_detalhes_secao2022” e “votacao_nominal_zona2022.” Em <code>pattern</code>, define-se, via <code>regex</code>, o padrão de arquivos que deverá ser descompactado e lido para cada <code>x</code>. Quanto mais preciso for o padrão definido, menores serão os gastos com tempo e com memória RAM.</p>
+<p>Em detalhes, <code>mapply</code> aplica à função <code>read_delim_zip</code> dois parâmetros: <code>x</code> e <code>pattern</code>. Em x, atribui-se o caminho absoluto dos três arquivos de interesse - “eleitorado2022”, “votacao_detalhes_secao2022” e “votacao_nominal_zona2022.” Em <code>pattern</code>, define-se, via <code>regex</code>, o padrão de arquivos que deverá ser descompactado e lido para cada <code>x</code>. Quanto mais detalhado for o padrão definido, menores serão os gastos com tempo e com memória RAM.</p>
 <p>Vejamos, por exemplo, o arquivo “votacao_nominal_zona2022”. Internamente, ele contém 29 tabelas em <code>.csv</code> e um documento em <code>.pdf</code>. Portanto, caso fosse atribuido a <code>pattern</code> apenas o valor <code>'.csv$'</code>, a função <code>read_delim_zip</code> leria e descompactaria 29 tabelas. O padrão <code>'BRASIL.csv'$</code>, em contraste, seleciona apenas a tabela de interesse, que contém os dados de votacao nominal, a nível de município e zona eleitoral, dos 26 estados, do Distrito Federal e dos eleitores que votaram no exterior.</p>
-<section id="abordagem-de-leitura-para-redução-de-gasto-de-memória-ram" class="level3">
-<h3 class="anchored" data-anchor-id="abordagem-de-leitura-para-redução-de-gasto-de-memória-ram">Abordagem de leitura para redução de gasto de memória RAM</h3>
+<section id="abordagem-de-leitura-de-dados-para-redução-de-gasto-de-memória-ram" class="level3">
+<h3 class="anchored" data-anchor-id="abordagem-de-leitura-de-dados-para-redução-de-gasto-de-memória-ram">Abordagem de leitura de dados para redução de gasto de memória RAM</h3>
 <p>Certamente, se você não usa um supercomputador, carregar milhares de linhas de dados na memória do seu computador será sempre um desafio. No exemplo acima, eu consumi 9,14 GB de memória RAM para carregar 16.818.896 linhas de dados distribuídas em 95 colunas.</p>
-<p>Uma opção para tornar viável a leitura de grandes volumes de dados sem estourar a memória RAM de sua máquina é carregar uma tabela de cada vez, tratar os dados dessa tabela e somente então ler o próximo arquivo, reescrevendo o anterior. Em casos extremos, você pode particionar as tabelas ou selecionar colunas antes de carregá-las. Feito dessa forma, você poupará tempo e memória RAM.</p>
+<p>Uma opção para tornar viável a leitura de grandes volumes de dados sem estourar a memória RAM de sua máquina é carregar uma tabela de cada vez, tratar os dados da tabela carregada e somente então ler o próximo arquivo, reescrevendo o anterior. Em casos extremos, você pode particionar as tabelas ou selecionar colunas antes de carregá-las. Feito dessa forma, você poupará tempo e memória RAM.</p>
 </section>
 </section>
 <section id="tratamento-dos-dados" class="level2">
@@ -543,7 +542,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="limpeza-do-ambiente-global-e-memória" class="level3">
 <h3 class="anchored" data-anchor-id="limpeza-do-ambiente-global-e-memória">Limpeza do ambiente global e memória</h3>
-<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Para reduzir ainda mais o consumo de memória, basta excluir do ambiente global a última tabela carregada e resetar a sessão do R. O processo gerou uma nova redução de consumo de memória de 932 mb.</p>
+<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Para reduzir ainda mais o consumo de memória, basta excluir a última tabela carregada no ambiente global e resetar a sessão do R. Este processo gerou uma nova redução no consumo de memória de 932 mb.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(data) <span class="co"># exclui a base original</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.rs.restartR</span>() <span class="co"># reinicia a sessão do R, mas mantém os objetos salvos no "Global Environment"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
