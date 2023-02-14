@@ -7,6 +7,8 @@ name: Render and Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -16,6 +18,14 @@ jobs:
           # To install LaTeX to build PDF book 
           tinytex: true 
           
+      - name: "Install R Packages: Cache packages"
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+            
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
