@@ -3,6 +3,7 @@ title: "R"
 listing:
   contents: ./
   type: table
+  fields: [date, title, author]
   sort:
     - "date"
     - "title desc"

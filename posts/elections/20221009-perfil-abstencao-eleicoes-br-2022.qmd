@@ -16,7 +16,6 @@ format:
   html:
     code-fold: true
     code-tools: true
-freeze: true
 ---
 
 Quem não votou nas eleições brasileiras de 2022? Recentemente, pesquisadores eleitorais, políticos e jornalistas repercutiram divergências entre pesquisas eleitorais e resultados das urnas. Especialistas, de um lado, afirmaram que a discrepância entre intenção de voto e votos válidos reside na dificuldade de estimação das taxas de abstenção em pesquisas eleitorais. Sem adequadas taxas de abstenção, argumentam, pesquisas de intenção de voto não devem lidas como preditores de votos válidos[^1]. De outro lado, institutos de pesquisas reuniram esforços para produzir ferramentas capazes de estimar quem seriam os eleitores prováveis, que compareceriam no segundo turno das eleições presidenciais de 2022.
