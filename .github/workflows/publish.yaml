@@ -21,10 +21,13 @@ jobs:
         with:
           cache-version: 2
           packages:
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
+            arturhgq/read365
+            arturhgq/dtools
+            arturhgq/ggviz
+            #any::knitr
+            #any::rmarkdown
+            #any::downlit
+            #any::xml2
             
       - uses: actions/setup-python@v4
         with:
