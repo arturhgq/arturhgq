@@ -26,6 +26,7 @@ jobs:
             arturhgq/ggviz
             any::vroom
             any::data.table
+            any::sysfonts
             #any::knitr
             #any::rmarkdown
             #any::downlit
