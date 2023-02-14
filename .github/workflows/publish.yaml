@@ -25,6 +25,7 @@ jobs:
             arturhgq/dtools
             arturhgq/ggviz
             any::vroom
+            any::data.table
             #any::knitr
             #any::rmarkdown
             #any::downlit
