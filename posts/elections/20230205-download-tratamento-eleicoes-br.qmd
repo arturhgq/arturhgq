@@ -48,7 +48,6 @@ ofereço uma alternativa, com o pacote `electionsBR`.
 
 ## R base
 ```{r}
-# Não rode o código se o computador tiver até 8gb de RAM.
 data = mapply(
   dtools::read_delim_zip, 
   x = files, 
@@ -88,8 +87,10 @@ dos 26 estados, do Distrito Federal e dos eleitores que votaram no exterior.
 
 Certamente, se você não usa um supercomputador, carregar milhares de linhas de
 dados na memória do seu computador será sempre um desafio. No exemplo acima, eu
-consumi 9,14 GB de memória RAM para carregar 16.818.896 linhas de dados 
+consumi 9,14 GB[^1] de memória RAM para carregar 16.818.896 linhas de dados 
 distribuídas em 95 colunas. 
+
+[^1]: Por diferentes fatores, o consumo de memória RAM varia.
 
 Uma opção para tornar viável a leitura de grandes volumes de dados sem estourar a memória 
 RAM de sua máquina é carregar uma tabela de cada vez, tratar os dados da tabela carregada 
@@ -110,7 +111,7 @@ params = list(
     "SG_UF", "CD_MUNICIPIO", "NM_MUNICIPIO", "DS_GENERO", "DS_FAIXA_ETARIA", 
     "DS_GRAU_ESCOLARIDADE", "ANO_ELEICAO"
   ),
-  vars_eleirado2022 = c(
+  vars_eleitorado2022 = c(
     "QT_ELEITORES_PERFIL", "QT_ELEITORES_BIOMETRIA"
   ),
   by_detalhes_votacao2022 = c(
@@ -135,7 +136,7 @@ params = list(
 
 ```{r}
 ## Define as variáveis que serão carregadas
-select = c(params$by_eleitorado2022, params$vars_eleirado2022)
+select = c(params$by_eleitorado2022, params$vars_eleitorado2022)
 
 ## Leitura dos dados
 data = dtools::read_delim_zip(
@@ -149,7 +150,7 @@ eleitorado_mun2022 = data.table::setDT(data)[
     , # seleciona todas as linhas
     lapply(.SD, sum), # soma todas as colunas contidas em .SD
     by = eval(params$by_eleitorado2022), # define o agrupamento
-    .SDcols = params$vars_eleirado2022 # define quais colunas de .SD
+    .SDcols = params$vars_eleitorado2022 # define as colunas de .SD
   ] 
 ```
 
@@ -171,11 +172,11 @@ data = dtools::read_delim_zip(
 )
 
 ## Tratamento dos dados
-votacao_mun_detalhes2022 = data.table::setDT(data)[
+votacao_detalhes_mun2022 = data.table::setDT(data)[
     DS_CARGO == "PRESIDENTE",
     lapply(.SD, sum), 
     by = eval(params$by_detalhes_votacao2022),
-    .SDcols = params$vars_votacao2022
+    .SDcols = params$vars_detalhes_votacao2022
   ] 
 ```
 
@@ -206,7 +207,7 @@ votacao_mun2022 = data.table::setDT(data)[
 
 
 
-### Limpeza do ambiente global e memória
+### Limpeza do ambiente global e da memória
 
 Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. 
 Para reduzir ainda mais o consumo de memória, basta excluir a última tabela carregada no ambiente global e resetar a sessão do R. Este processo gerou uma nova redução no consumo de memória de 932 mb. 
@@ -223,22 +224,24 @@ rm(data) # exclui a base original
 ## Lista com as tabelas tratadas
 data = list(
   eleitorado_mun2022, 
-  votacao_mun_detalhes2022, 
+  votacao_detalhes_mun2022, 
   votacao_mun2022
 )
 
 ## Nome dos arquivos que serão exportados
 names = c(
   "eleitorado_mun2022.csv", 
-  "mun_votacao_detalhes_secao2022.csv",
-  "mun_votacao2022.csv"
+  "votacao_detalhes_mun2022.csv",
+  "votacao_mun2022.csv"
 )
 
 invisible(
   mapply(
     vroom::vroom_write, 
     x = data, 
-    file = here::here(names)
+    file = here::here(names),
+    delim = ";",
+    bom = TRUE
   )
 ) 
 ```
