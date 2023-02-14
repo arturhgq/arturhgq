@@ -24,6 +24,7 @@ jobs:
             arturhgq/read365
             arturhgq/dtools
             arturhgq/ggviz
+            any::vroom
             #any::knitr
             #any::rmarkdown
             #any::downlit
