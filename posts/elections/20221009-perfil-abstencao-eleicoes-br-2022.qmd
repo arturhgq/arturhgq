@@ -193,11 +193,9 @@ dt_split2$DS_GENERO |>
     size_axis_text = 12,
     size_legend = 12,
     family = family,
-    margin_plot_r = 15
-  ) +
-  ggplot2::theme(
+    margin_plot_r = 15,
     panel.spacing.x = ggplot2::unit(30, "pt")
-  )
+  ) 
 ```
 
 ## Escolaridade
@@ -250,14 +248,12 @@ dt_split2$DS_GRAU_ESCOLARIDADE |>
     size_axis_text = 12,
     size_legend = 12,
     family = family,
-    margin_plot_r = 10
+    margin_plot_r = 10,
+    panel.spacing.x = ggplot2::unit(30, "pt")
   ) +
   ggplot2::guides(
     fill = ggplot2::guide_legend(nrow = 2)
-  ) +
-  ggplot2::theme(
-    panel.spacing.x = ggplot2::unit(30, "pt")
-  )
+  ) 
 ```
 
 
@@ -312,15 +308,12 @@ dt_split2$DS_FAIXA_ETARIA |>
     size_axis_text = 12,
     size_legend = 12,
     family = family,
-    margin_plot_r = 10
-  ) +
-  ggplot2::theme(
+    margin_plot_r = 10,
     panel.spacing.x = ggplot2::unit(30, "pt")
   ) +
   ggplot2::guides(
     fill = ggplot2::guide_legend(ncol = 3)
-  ) +
-  ggplot2::coord_cartesian(clip = "off") 
+  ) 
 ```
 
 :::
