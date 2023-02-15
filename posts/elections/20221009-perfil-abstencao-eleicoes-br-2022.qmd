@@ -302,7 +302,7 @@ dt_split2$DS_FAIXA_ETARIA |>
     caption = "A categoria 'Jovens' inclui indivíduos de 16 a 19 anos. 
     'Adultos', por sua vez, brasileiros de 20 a 59 anos. 'Idosos I', da mesma forma,
     agregam pessoas com mais de 60 anos e menos que 74 anos. Os demais estão
-    agrupados sob a categoria 'Idosos II'") +
+    agrupados sob a categoria 'Idosos II'.") +
   ggviz::theme_academic(
     size_title = 14,
     size_axis_text = 12,
