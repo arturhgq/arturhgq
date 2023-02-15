@@ -5,7 +5,9 @@
   },
   {
     "listing": "/posts/R/R.html",
-    "items": []
+    "items": [
+      "/posts/R/20230208-Download-reading-microsoft365-r.html"
+    ]
   },
   {
     "listing": "/posts/benchmarking/benchmarking.html",
@@ -26,8 +28,9 @@
   {
     "listing": "/posts/elections/elections.html",
     "items": [
-      "/posts/elections/20220206-Download-eleicoes-analises-longitudinais.html",
-      "/posts/elections/20230205-Download-tratamento-eleicoes-br.html"
+      "/posts/elections/20221009-perfil-abstencao-eleicoes-br-2022.html",
+      "/posts/elections/20220206-download-eleicoes-analises-longitudinais-br.html",
+      "/posts/elections/20230205-download-tratamento-eleicoes-br.html"
     ]
   },
   {
