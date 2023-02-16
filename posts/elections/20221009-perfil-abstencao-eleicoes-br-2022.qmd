@@ -22,9 +22,9 @@ Quem não votou nas eleições brasileiras de 2022? Recentemente, pesquisadores 
 
 [^1]: Ver [Antonio Lavareda: 'Votos válidos derivados das pesquisas são apenas ilações'](https://oglobo.globo.com/blogs/pulso/post/2022/10/antonio-lavareda-votos-validos-derivados-das-pesquisas-sao-apenas-ilacoes.ghtml) 
 
-Nesta postagem, eu extraio a taxa de abstenção eleitoral das eleições de 2022 em
-cada região geográfica. Os dados estão desagregados pelo perfil
-sociodemográfico dos eleitores brasileiros aptos a votar.
+Nesta postagem, eu extraio a taxa de abstenção nas eleições de 2022 para
+cada região geográfica brasileira. Os dados estão desagregados pelo perfil
+sociodemográfico dos eleitores aptos a votar.
 
 ```{r, results='hide'}
 # Leitura e manipulação dos dados
