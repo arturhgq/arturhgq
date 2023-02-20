@@ -1,7 +1,0 @@
----
-title: "Downloading and reading OneDrive or SharePoint files using R"
-author: "Artur Quirino"
-date: "2023-02-08"
-date-modified: "2023-02-08"
----
-

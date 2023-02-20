@@ -2,19 +2,19 @@
 title: "Download e tratamento de dados das eleições brasileiras usando R"
 author: "Artur Quirino"
 date: "2023-02-06"
-date-modified: "2023-02-07"
+date-modified: "2023-02-19"
 execute: 
   eval: FALSE
 ---
 
-Nesta postagem, eu descrevo uma abordagem para *download*, leitura e tratamento de dados das eleições 
-brasileiras no `R`, em poucas linhas de código. A atividade é desenvolvida com 
-dados do perfil do eleitorado, detalhes da  votação por seção e votação nominal
-por zona.
+Nesta postagem, eu descrevo uma abordagem para *download*, leitura e tratamento 
+de dados das eleições brasileiras no `R`, em poucas linhas de código. A atividade 
+é desenvolvida com dados do perfil do eleitorado, detalhes da votação por seção 
+e votação nominal por zona.
 
 # Download e leitura dos dados
 
-Há duas formas para o download e leitura das tabelas de dados do TSE no `R`. 
+Há duas formas para download e leitura das tabelas de dados do TSE no `R`. 
 A primeira, querer a identificação e manuseio do link de cada tabela; a segunda, 
 baseia-se nas funções do pacote `electionsBR`. A primeira opção é mais rápida, 
 a segunda é mais simples. 
@@ -209,8 +209,10 @@ votacao_mun2022 = data.table::setDT(data)[
 
 ### Limpeza do ambiente global e da memória
 
-Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. 
-Para reduzir ainda mais o consumo de memória, basta excluir a última tabela carregada no ambiente global e resetar a sessão do R. Este processo gerou uma nova redução no consumo de memória de 932 mb. 
+Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB 
+para 1,29 GB. Caso precise reduzir ainda mais o consumo de memória, exclua 
+a última tabela carregada no ambiente global e resete a sessão do `R`. Com essas
+operações, houve uma nova redução no consumo de memória de 932 mb. 
 
 ```{r}
 rm(data) # exclui a base original

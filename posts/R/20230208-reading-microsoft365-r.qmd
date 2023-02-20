@@ -1,0 +1,72 @@
+---
+title: "Reading OneDrive and SharePoint files with read365 R package"
+author: "Artur Quirino"
+date: "2023-02-08"
+date-modified: "2023-02-20"
+---
+
+In this post, I would like to introduce three functions available in the `read365` 
+package that allow for the reading of OneDrive and SharePoint files: `OneDrive_file`,
+`SharePoint_file` and `OneDrive_shared_file`. The former two functions are intended 
+for private content, while the latter is designed for public files stored in OneDrives.
+It is worth noting that read365 is heavily reliant on the Microsoft365R package.
+
+
+## Reading private content from OneDrive
+
+The `OneDrive_file` function executes the login process onto OneDrive by 
+utilizing Azure Active Directory authentication. Upon successful authentication, 
+`OneDrive_file` requires users to set three parameters: the location of the file (`file`),
+the desired function for reading the file (`.function`), and optionally, arguments for this function (`...`). 
+See the example below.
+
+```{r}
+#remotes::install_github("arturhgq/read365")
+read365::OneDrive_file(
+  "CienciaPolitica/data/read365_examples/OneDrive_file.xlsx",
+  readxl::read_excel, 
+  sheet = 1
+)
+```
+
+## Reading private content from SharePoint
+
+Shortly, the usage of the `SharePoint_file` is similiar to `OneDrive_file`. 
+However, there are two additional parameters that must be set: `SharePoint` 
+and `drive`. In the `SharePoint` parameter, the user is required to specify the 
+SharePoint URL where the target file is located. As SharePoint may contain multiple 
+drives to store files, users must indicate the specific drive[^1] to be accessed too.
+In most cases, the "Documents" drive is the primary drive for storing files in SharePoint.
+
+[^1]: In case the appropriate drive is unknown, a list of drives can be obtained by 
+utilizing the `read365::get_drives` function.
+
+```{r}
+read365::SharePoint_file(
+  SharePoint = "https://arturhgq.sharepoint.com",
+  drive = "Documentos",
+  file = "Sharepoint_file.xlsx",
+  .function = readxl::read_excel
+)
+```
+
+## Reading public content from OneDrive
+ 
+To use `OneDrive_shared_file` no authentication is required. Therefore, all that is
+needed is to provide the file's URL along with the corresponding function for reading 
+the file and, optionally, its respective parameters.
+
+```{r}
+ url = 'https://arturhgq-my.sharepoint.com/:x:/p/contact/EZ_KJ3cqtIVEh4PdXhTGy7IBpWT5_Zlp2VjYwlgVCPK4oQ?e=UZGQZt'
+
+ read365::OneDrive_shared_file(
+    url,
+    .function = readxl::read_excel,
+    sheet = 1
+  )
+```
+
+
+
+
+

@@ -4,7 +4,9 @@ project:
   output-dir: docs
 
 website:
-  twitter-card: true
+  twitter-card: 
+   card-style: summary
+   creator: "@arturhgq"
   open-graph: true
   search:
     location: navbar
