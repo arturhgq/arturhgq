@@ -5,12 +5,15 @@ date: "2023-02-08"
 date-modified: "2023-02-20"
 ---
 
-In this post, I would like to introduce three functions available in the `read365` 
+In this post, I would like to introduce four functions available in the `read365` `R`
 package that allow for the reading of OneDrive and SharePoint files: `OneDrive_file`,
-`SharePoint_file` and `OneDrive_shared_file`. The former two functions are intended 
-for private content, while the latter is designed for public files stored in OneDrives.
-It is worth noting that read365 is heavily reliant on the Microsoft365R package.
+`SharePoint_file`, `OneDrive_shared_file` and `SharePoint_shared_file`. 
+The former two functions are intended for private content, while the last two are 
+designed for public files. It is worth noting that `read365` is heavily reliant on the 
+`Microsoft365R` package.
 
+The goal of the read365 package is to allow users to read files from Office365 
+directly in R, without the need to sync files between their computer and the cloud.
 
 ## Reading private content from OneDrive
 
@@ -35,8 +38,8 @@ Shortly, the usage of the `SharePoint_file` is similiar to `OneDrive_file`.
 However, there are two additional parameters that must be set: `SharePoint` 
 and `drive`. In the `SharePoint` parameter, the user is required to specify the 
 SharePoint URL where the target file is located. As SharePoint may contain multiple 
-drives to store files, users must indicate the specific drive[^1] to be accessed too.
-In most cases, the "Documents" drive is the primary drive for storing files in SharePoint.
+drives to store files, users must indicate the specific `drive`[^1] to be accessed too.
+In most cases, "Documents" is the primary drive for storing files in SharePoint.
 
 [^1]: In case the appropriate drive is unknown, a list of drives can be obtained by 
 utilizing the `read365::get_drives` function.
@@ -50,17 +53,26 @@ read365::SharePoint_file(
 )
 ```
 
-## Reading public content from OneDrive
+## Reading public content from OneDrive or SharePoint
  
-To use `OneDrive_shared_file` no authentication is required. Therefore, all that is
+To use `OneDrive_shared_file` or `SharePoint_shared_file`[^2] no authentication is required. Therefore, all that is
 needed is to provide the file's URL along with the corresponding function for reading 
 the file and, optionally, its respective parameters.
 
-```{r}
- url = 'https://arturhgq-my.sharepoint.com/:x:/p/contact/EZ_KJ3cqtIVEh4PdXhTGy7IBpWT5_Zlp2VjYwlgVCPK4oQ?e=UZGQZt'
+[^2]: Internally, both functions are identical.
 
+```{r}
+ url_OneDrive = 'https://arturhgq-my.sharepoint.com/:x:/p/contact/EZ_KJ3cqtIVEh4PdXhTGy7IBpWT5_Zlp2VjYwlgVCPK4oQ?e=UZGQZt'
+ url_SharePoint = 'https://arturhgq.sharepoint.com/:x:/g/EZOMb55WRsZFhXuo5K8uGXYBaRdGPNhX7lFNDjLpphj-mw?e=nCm0L4'
+ 
  read365::OneDrive_shared_file(
-    url,
+    url_OneDrive,
+    .function = readxl::read_excel,
+    sheet = 1
+  )
+
+  read365::SharePoint_shared_file(
+    url_SharePoint,
     .function = readxl::read_excel,
     sheet = 1
   )
