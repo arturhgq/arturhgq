@@ -132,6 +132,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <meta property="og:site-name" content="arturhgq">
 <meta name="twitter:title" content="arturhgq - Download e tratamento de dados das eleições brasileiras usando R">
 <meta name="twitter:description" content="Nesta postagem, eu descrevo uma abordagem para download, leitura e tratamento de dados das eleições brasileiras no R, em poucas linhas de código.">
+<meta name="twitter:creator" content="@arturhgq">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -375,7 +376,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">February 7, 2023</p>
+      <p class="date-modified">February 19, 2023</p>
     </div>
   </div>
     
@@ -387,7 +388,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Nesta postagem, eu descrevo uma abordagem para <em>download</em>, leitura e tratamento de dados das eleições brasileiras no <code>R</code>, em poucas linhas de código. A atividade é desenvolvida com dados do perfil do eleitorado, detalhes da votação por seção e votação nominal por zona.</p>
 <section id="download-e-leitura-dos-dados" class="level1">
 <h1>Download e leitura dos dados</h1>
-<p>Há duas formas para o download e leitura das tabelas de dados do TSE no <code>R</code>. A primeira, querer a identificação e manuseio do link de cada tabela; a segunda, baseia-se nas funções do pacote <code>electionsBR</code>. A primeira opção é mais rápida, a segunda é mais simples.</p>
+<p>Há duas formas para download e leitura das tabelas de dados do TSE no <code>R</code>. A primeira, querer a identificação e manuseio do link de cada tabela; a segunda, baseia-se nas funções do pacote <code>electionsBR</code>. A primeira opção é mais rápida, a segunda é mais simples.</p>
 <p>No exemplo a seguir, eu faço o download das tabelas das eleições gerais estaduais de 2022, manualmente. O objeto <code>files</code> armazena o nome e o local onde cada arquivo foi salvo.</p>
 <section id="download" class="level2">
 <h2 class="anchored" data-anchor-id="download">Download</h2>
@@ -548,7 +549,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="limpeza-do-ambiente-global-e-da-memória" class="level3">
 <h3 class="anchored" data-anchor-id="limpeza-do-ambiente-global-e-da-memória">Limpeza do ambiente global e da memória</h3>
-<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Para reduzir ainda mais o consumo de memória, basta excluir a última tabela carregada no ambiente global e resetar a sessão do R. Este processo gerou uma nova redução no consumo de memória de 932 mb.</p>
+<p>Como resultado da abordagem proposta, o total de memória gasta diminuiu de 9,14 GB para 1,29 GB. Caso precise reduzir ainda mais o consumo de memória, exclua a última tabela carregada no ambiente global e resete a sessão do <code>R</code>. Com essas operações, houve uma nova redução no consumo de memória de 932 mb.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(data) <span class="co"># exclui a base original</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">.rs.restartR</span>() <span class="co"># reinicia a sessão do R, mas mantém os objetos salvos no "Global Environment"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

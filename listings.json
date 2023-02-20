@@ -1,21 +1,17 @@
 [
   {
-    "listing": "/data.html",
+    "listing": "/posts/regimes/regimes.html",
     "items": []
-  },
-  {
-    "listing": "/posts/R/R.html",
-    "items": [
-      "/posts/R/20230208-Download-reading-microsoft365-r.html"
-    ]
   },
   {
     "listing": "/posts/benchmarking/benchmarking.html",
     "items": []
   },
   {
-    "listing": "/posts/accountability/accountability.html",
-    "items": []
+    "listing": "/posts/R/R.html",
+    "items": [
+      "/posts/R/20230208-reading-microsoft365-r.html"
+    ]
   },
   {
     "listing": "/posts/python/python.html",
@@ -23,6 +19,14 @@
   },
   {
     "listing": "/posts/programming/programming.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/parties/parties.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/accountability/accountability.html",
     "items": []
   },
   {
@@ -34,15 +38,11 @@
     ]
   },
   {
-    "listing": "/posts/parties/parties.html",
-    "items": []
-  },
-  {
     "listing": "/posts/stats/stats.html",
     "items": []
   },
   {
-    "listing": "/posts/regimes/regimes.html",
+    "listing": "/data.html",
     "items": []
   }
 ]
