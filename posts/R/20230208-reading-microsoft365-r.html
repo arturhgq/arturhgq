@@ -128,10 +128,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <meta property="og:title" content="arturhgq - Reading OneDrive and SharePoint files with read365 R package">
-<meta property="og:description" content="In this post, I would like to introduce three functions available in the read365 package that allow for the reading of OneDrive and SharePoint files: OneDrive_file, SharePoint_file and…">
+<meta property="og:description" content="In this post, I would like to introduce four functions available in the read365 R package that allow for the reading of OneDrive and SharePoint files: OneDrive_file, SharePoint_file…">
 <meta property="og:site-name" content="arturhgq">
 <meta name="twitter:title" content="arturhgq - Reading OneDrive and SharePoint files with read365 R package">
-<meta name="twitter:description" content="In this post, I would like to introduce three functions available in the read365 package that allow for the reading of OneDrive and SharePoint files: OneDrive_file, SharePoint_file and…">
+<meta name="twitter:description" content="In this post, I would like to introduce four functions available in the read365 R package that allow for the reading of OneDrive and SharePoint files: OneDrive_file, SharePoint_file…">
 <meta name="twitter:creator" content="@arturhgq">
 <meta name="twitter:card" content="summary">
 </head>
@@ -330,7 +330,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul>
   <li><a href="#reading-private-content-from-onedrive" id="toc-reading-private-content-from-onedrive" class="nav-link active" data-scroll-target="#reading-private-content-from-onedrive">Reading private content from OneDrive</a></li>
   <li><a href="#reading-private-content-from-sharepoint" id="toc-reading-private-content-from-sharepoint" class="nav-link" data-scroll-target="#reading-private-content-from-sharepoint">Reading private content from SharePoint</a></li>
-  <li><a href="#reading-public-content-from-onedrive" id="toc-reading-public-content-from-onedrive" class="nav-link" data-scroll-target="#reading-public-content-from-onedrive">Reading public content from OneDrive</a></li>
+  <li><a href="#reading-public-content-from-onedrive-or-sharepoint" id="toc-reading-public-content-from-onedrive-or-sharepoint" class="nav-link" data-scroll-target="#reading-public-content-from-onedrive-or-sharepoint">Reading public content from OneDrive or SharePoint</a></li>
   </ul>
 </nav>
     </div>
@@ -372,7 +372,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>In this post, I would like to introduce three functions available in the <code>read365</code> package that allow for the reading of OneDrive and SharePoint files: <code>OneDrive_file</code>, <code>SharePoint_file</code> and <code>OneDrive_shared_file</code>. The former two functions are intended for private content, while the latter is designed for public files stored in OneDrives. It is worth noting that read365 is heavily reliant on the Microsoft365R package.</p>
+<p>In this post, I would like to introduce four functions available in the <code>read365</code> <code>R</code> package that allow for the reading of OneDrive and SharePoint files: <code>OneDrive_file</code>, <code>SharePoint_file</code>, <code>OneDrive_shared_file</code> and <code>SharePoint_shared_file</code>. The former two functions are intended for private content, while the last two are designed for public files. It is worth noting that <code>read365</code> is heavily reliant on the <code>Microsoft365R</code> package.</p>
+<p>The goal of the read365 package is to allow users to read files from Office365 directly in R, without the need to sync files between their computer and the cloud.</p>
 <section id="reading-private-content-from-onedrive" class="level2">
 <h2 class="anchored" data-anchor-id="reading-private-content-from-onedrive">Reading private content from OneDrive</h2>
 <p>The <code>OneDrive_file</code> function executes the login process onto OneDrive by utilizing Azure Active Directory authentication. Upon successful authentication, <code>OneDrive_file</code> requires users to set three parameters: the location of the file (<code>file</code>), the desired function for reading the file (<code>.function</code>), and optionally, arguments for this function (<code>...</code>). See the example below.</p>
@@ -398,7 +399,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="reading-private-content-from-sharepoint" class="level2">
 <h2 class="anchored" data-anchor-id="reading-private-content-from-sharepoint">Reading private content from SharePoint</h2>
-<p>Shortly, the usage of the <code>SharePoint_file</code> is similiar to <code>OneDrive_file</code>. However, there are two additional parameters that must be set: <code>SharePoint</code> and <code>drive</code>. In the <code>SharePoint</code> parameter, the user is required to specify the SharePoint URL where the target file is located. As SharePoint may contain multiple drives to store files, users must indicate the specific drive<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to be accessed too. In most cases, the “Documents” drive is the primary drive for storing files in SharePoint.</p>
+<p>Shortly, the usage of the <code>SharePoint_file</code> is similiar to <code>OneDrive_file</code>. However, there are two additional parameters that must be set: <code>SharePoint</code> and <code>drive</code>. In the <code>SharePoint</code> parameter, the user is required to specify the SharePoint URL where the target file is located. As SharePoint may contain multiple drives to store files, users must indicate the specific <code>drive</code><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to be accessed too. In most cases, “Documents” is the primary drive for storing files in SharePoint.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>read365<span class="sc">::</span><span class="fu">SharePoint_file</span>(</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">SharePoint =</span> <span class="st">"https://arturhgq.sharepoint.com"</span>,</span>
@@ -419,17 +420,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </section>
-<section id="reading-public-content-from-onedrive" class="level2">
-<h2 class="anchored" data-anchor-id="reading-public-content-from-onedrive">Reading public content from OneDrive</h2>
-<p>To use <code>OneDrive_shared_file</code> no authentication is required. Therefore, all that is needed is to provide the file’s URL along with the corresponding function for reading the file and, optionally, its respective parameters.</p>
+<section id="reading-public-content-from-onedrive-or-sharepoint" class="level2">
+<h2 class="anchored" data-anchor-id="reading-public-content-from-onedrive-or-sharepoint">Reading public content from OneDrive or SharePoint</h2>
+<p>To use <code>OneDrive_shared_file</code> or <code>SharePoint_shared_file</code><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> no authentication is required. Therefore, all that is needed is to provide the file’s URL along with the corresponding function for reading the file and, optionally, its respective parameters.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> url <span class="ot">=</span> <span class="st">'https://arturhgq-my.sharepoint.com/:x:/p/contact/EZ_KJ3cqtIVEh4PdXhTGy7IBpWT5_Zlp2VjYwlgVCPK4oQ?e=UZGQZt'</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a> read365<span class="sc">::</span><span class="fu">OneDrive_shared_file</span>(</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    url,</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.function =</span> readxl<span class="sc">::</span>read_excel,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">sheet =</span> <span class="dv">1</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a> url_OneDrive <span class="ot">=</span> <span class="st">'https://arturhgq-my.sharepoint.com/:x:/p/contact/EZ_KJ3cqtIVEh4PdXhTGy7IBpWT5_Zlp2VjYwlgVCPK4oQ?e=UZGQZt'</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a> url_SharePoint <span class="ot">=</span> <span class="st">'https://arturhgq.sharepoint.com/:x:/g/EZOMb55WRsZFhXuo5K8uGXYBaRdGPNhX7lFNDjLpphj-mw?e=nCm0L4'</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a> read365<span class="sc">::</span><span class="fu">OneDrive_shared_file</span>(</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    url_OneDrive,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.function =</span> readxl<span class="sc">::</span>read_excel,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">sheet =</span> <span class="dv">1</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
    col1  col2
@@ -437,6 +439,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 1     1     2
 2     3     4
 3     5     6</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>  read365<span class="sc">::</span><span class="fu">SharePoint_shared_file</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    url_SharePoint,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">.function =</span> readxl<span class="sc">::</span>read_excel,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">sheet =</span> <span class="dv">1</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 4
+   col1  col2 `private content` SharePoint
+  &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;             &lt;chr&gt;     
+1     1     2 TRUE              TRUE      
+2     3     4 TRUE              TRUE      
+3     5     6 TRUE              TRUE      </code></pre>
 </div>
 </div>
 
@@ -448,6 +463,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <ol>
 <li id="fn1"><p>In case the appropriate drive is unknown, a list of drives can be obtained by utilizing the <code>read365::get_drives</code> function.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Internally, both functions are identical.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
