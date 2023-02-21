@@ -5,6 +5,9 @@ date-modified: "2023-02-19"
 author: "Artur Quirino"
 execute: 
   eval: FALSE
+categories:
+  - elections
+  - R
 ---
 
 O [Tribunal Superior Eleitoral](https://www.tse.jus.br/) (TSE) disponibiliza para download um vasto conjunto 
