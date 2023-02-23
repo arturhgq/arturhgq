@@ -1,46 +1,13 @@
 [
   {
-    "listing": "/posts/regimes/regimes.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/benchmarking/benchmarking.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/R/R.html",
+    "listing": "/blog.html",
     "items": [
-      "/posts/R/20230208-reading-microsoft365-r.html"
+      "/posts/20220824-votos-brancos-nulos-presidente-br-1994-2022.html",
+      "/posts/20221009-perfil-abstencao-eleicoes-br-2022.html",
+      "/posts/20220206-download-eleicoes-analises-longitudinais-br.html",
+      "/posts/20230205-download-tratamento-eleicoes-br-2022.html",
+      "/posts/20230208-reading-microsoft365-r.html"
     ]
-  },
-  {
-    "listing": "/posts/python/python.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/programming/programming.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/parties/parties.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/accountability/accountability.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/elections/elections.html",
-    "items": [
-      "/posts/elections/20220824-votos-brancos-nulos-presidente-br-1994-2022.html",
-      "/posts/elections/20221009-perfil-abstencao-eleicoes-br-2022.html",
-      "/posts/elections/20220206-download-eleicoes-analises-longitudinais-br.html",
-      "/posts/elections/20230205-download-tratamento-eleicoes-br-2022.html"
-    ]
-  },
-  {
-    "listing": "/posts/stats/stats.html",
-    "items": []
   },
   {
     "listing": "/data.html",

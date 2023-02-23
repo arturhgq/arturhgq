@@ -1,67 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/regimes/regimes.html</loc>
-    <lastmod>2023-02-21T01:54:51.234Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/blog.html</loc>
+    <lastmod>2023-02-23T12:47:27.527Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/benchmarking/benchmarking.html</loc>
-    <lastmod>2023-02-21T01:54:52.386Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/posts/20220824-votos-brancos-nulos-presidente-br-1994-2022.html</loc>
+    <lastmod>2023-02-23T12:47:29.323Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/R/20230208-reading-microsoft365-r.html</loc>
-    <lastmod>2023-02-21T01:54:53.342Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/posts/20220206-download-eleicoes-analises-longitudinais-br.html</loc>
+    <lastmod>2023-02-23T12:47:30.563Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/R/R.html</loc>
-    <lastmod>2023-02-21T01:54:54.078Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/posts/20230208-reading-microsoft365-r.html</loc>
+    <lastmod>2023-02-23T12:47:31.839Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/python/python.html</loc>
-    <lastmod>2023-02-21T01:54:55.002Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/posts/20221009-perfil-abstencao-eleicoes-br-2022.html</loc>
+    <lastmod>2023-02-23T12:47:33.523Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/programming/programming.html</loc>
-    <lastmod>2023-02-21T01:54:55.790Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/parties/parties.html</loc>
-    <lastmod>2023-02-21T01:54:56.514Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/accountability/accountability.html</loc>
-    <lastmod>2023-02-21T01:54:57.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/elections/20220824-votos-brancos-nulos-presidente-br-1994-2022.html</loc>
-    <lastmod>2023-02-21T01:54:59.310Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/elections/20220206-download-eleicoes-analises-longitudinais-br.html</loc>
-    <lastmod>2023-02-21T01:55:00.162Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/elections/elections.html</loc>
-    <lastmod>2023-02-21T01:55:01.062Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/elections/20221009-perfil-abstencao-eleicoes-br-2022.html</loc>
-    <lastmod>2023-02-21T01:55:02.406Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/elections/20230205-download-tratamento-eleicoes-br-2022.html</loc>
-    <lastmod>2023-02-21T01:55:03.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/arturhgq/arturhgq/posts/stats/stats.html</loc>
-    <lastmod>2023-02-21T01:55:04.110Z</lastmod>
+    <loc>https://github.com/arturhgq/arturhgq/posts/20230205-download-tratamento-eleicoes-br-2022.html</loc>
+    <lastmod>2023-02-23T12:47:34.879Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/arturhgq/arturhgq/data.html</loc>
-    <lastmod>2023-02-21T01:55:04.850Z</lastmod>
+    <lastmod>2023-02-23T12:47:35.867Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/arturhgq/arturhgq/index.html</loc>
-    <lastmod>2023-02-21T01:55:05.550Z</lastmod>
+    <lastmod>2023-02-23T12:47:36.851Z</lastmod>
   </url>
 </urlset>
