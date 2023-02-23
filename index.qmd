@@ -1,5 +1,5 @@
 ---
-title: "Under construction"
+title: "Currently being built"
 about:
   template: solana
 ---

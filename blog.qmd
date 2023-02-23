@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description: This blog covers topics in political science, methodology and data analysis
 listing:
   contents: posts
   categories: true
