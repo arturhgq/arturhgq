@@ -11,35 +11,12 @@ website:
   search:
     location: navbar
     type: overlay
-  sidebar:
-    header: "Blog"
-    collapse-level: 2
-    style: "floating"
-    border: true
-    foreground: "#333333"
-    contents: 
-      - section: "Data Analysis"
-        contents:
-          - file: posts/programming/programming.qmd
-          - file: posts/R/R.qmd
-          - file: posts/python/python.qmd
-          - file: posts/stats/stats.qmd
-      - section: "Politics"
-        contents:
-          - file: posts/elections/elections.qmd
-          - file: posts/parties/parties.qmd
-          - file: posts/regimes/regimes.qmd
-          - file: posts/accountability/accountability.qmd
-      - section: "Political Methodology"
-      #  contents:
-      #    - file: 
-      - section: "Academic Research"
-      #  contents:
-      #    - file: 
   navbar:
     left:
       - href: index.qmd
         text: Home 
+      - text: "Blog"
+        href: blog.qmd
       - text: "Software"
         menu:
           - text: "ead"

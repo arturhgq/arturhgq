@@ -1,7 +1,8 @@
 ---
-title: "R"
+title: "Blog"
 listing:
-  contents: ./
+  contents: posts
+  categories: true
   type: table
   fields: [date, title, author]
   sort:

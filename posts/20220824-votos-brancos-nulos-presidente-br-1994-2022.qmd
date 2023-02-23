@@ -1,5 +1,5 @@
 ---
-title: "Taxa de votos brancos e nulos para presidente no Brasil, de 1994 a 2022, usando python"
+title: "Taxa de votos brancos e nulos para presidente no Brasil, de 1994 a 2022, usando Python"
 author: "Artur Quirino"
 date: "2022-08-24"
 date-modified: "2023-02-20"
@@ -11,7 +11,7 @@ categories:
   - python
 ---
 
-# Importando as bibliotecas
+## Importando as bibliotecas
 
 ```{python}
 import basedosdados as bd
@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 ```
 
-# Download da tabela com dados das eleições brasileiras para presidente, de 1994 a 2022
+## Download da tabela com dados das eleições brasileiras para presidente, de 1994 a 2022
 ```{python}
 
 votos = bd.read_sql(
@@ -41,7 +41,7 @@ votos = bd.read_sql(
 )
 ```
 
-# Modelando os dados
+## Modelando os dados
 
 ```{python}
 # Transforma a variável ano de numérica para categórica
@@ -89,7 +89,7 @@ replace_values = ['Votos brancos', 'Votos nulos', 'Votos válidos']
 votos['variable'] = votos['variable'].replace(vars, replace_values)
 ```
 
-# Visualizando os dados
+## Visualizando os dados
 
 ```{python}
 # Configurações gerais dos gráficos
@@ -99,9 +99,9 @@ sns.set_theme(
 )
 ```
 
-## Votos brancos e nulos para presidente, por estado, 1994-2022
+### Votos brancos e nulos para presidente, por estado, 1994-2022
 
-### Primeiro turno
+#### Primeiro turno
 
 ```{python}
 # Filtra os dados
@@ -178,7 +178,7 @@ plot.set_titles(
 
 )
 ```
-### Segundo turno
+#### Segundo turno
 
 ```{python}
 # Filtra os dados
